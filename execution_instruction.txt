@@ -1,0 +1,13 @@
+# execution
+
+mkdir ~/data
+mkdir ~/data/output
+turkic extract ~/data/SampleVideo_1280x720_1mb.mp4 ~/data/output
+
+turkic load identifier1 ~/data/output Label1 Label2 --offline
+turkic publish --offline
+
+turkic status
+turkic list
+turkic dump identifier1 -o output.txt
+turkic delete identifier1
