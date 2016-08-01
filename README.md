@@ -4,6 +4,7 @@ All kinds of side-product produced during works
 
 
 1. vatic(annotation tool) installation guide (working in ubuntu 14.04 64bit) 16.07.29 successfully works.
+   
    This guidance only covers a local mode, not with Amazon mechanical turk. 
 
   1. 'vatic_installation_park.sh' is a true shell script, you can free with executing directly in terminal.
