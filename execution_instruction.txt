@@ -3,6 +3,7 @@
 mkdir ~/data
 mkdir ~/data/output
 turkic extract ~/data/SampleVideo_1280x720_1mb.mp4 ~/data/output
+turkic formatframes /path/to/frames/ /path/to/output/directory
 
 turkic load identifier1 ~/data/output Label1 Label2 --offline
 turkic publish --offline
