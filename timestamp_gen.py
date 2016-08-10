@@ -32,7 +32,6 @@ f.write(opening)
 # set start time as timestamp yyyymmddhhmmss.sssssss format
 unitTimePerFrame = 1/29.97
 cumulTime = 0
-numFrames = 63168
 startTime = dt.datetime(year_arg, month_arg, day_arg, hour_arg, minute_arg, second_arg, micsec_arg)
 
 # write timeVariable.isoformat(sep='/')
