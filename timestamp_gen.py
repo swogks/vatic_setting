@@ -24,7 +24,6 @@ second_arg = int(time_arg[6:8])
 micsec_arg = 1
 #micsec_arg = int(time_arg[9:])*10000
 
-
 # open text file
 fileName = 'timestamp_'+ header + '.txt'
 f = open(fileName, 'w')
