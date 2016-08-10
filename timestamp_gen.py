@@ -4,7 +4,7 @@ import datetime as dt
 import sys
 
 # getting Arguments
-# python timecode_cal.py CAM3_1 23567 2016/08/09 14:31:06:06
+# python timecode_cal.py CAM3_1 23567 2016/08/09 14:31:06
 # last 06*10^6 (microsec)
 header = sys.argv[1]
 numFrames = int(sys.argv[2])
