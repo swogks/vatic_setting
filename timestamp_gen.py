@@ -39,7 +39,7 @@ startTime = dt.datetime(year_arg, month_arg, day_arg, hour_arg, minute_arg, seco
 for i in range(numFrames):
     timeForRecord = startTime + dt.timedelta(seconds=cumulTime)
     
-    writeData = str(timeForRecord.isoformat(sep='/'))+'    '+'%07d.jpg'%i+'\n'
+    writeData = str(timeForRecord.isoformat(sep='/'))+'    '+'%07d.jpg'%(i+1)+'\n'
     f.write(writeData)
     cumulTime = round(unitTimePerFrame*(i+1), 6)
 
