@@ -31,7 +31,7 @@ f = open(fileName, 'w')
 opening = header + '\n' + 'timestamp    frameNumber(name)\n'
 f.write(opening)
 
-# set start time as timestamp yyyymmddhhmmss.sssssss format
+# set base variables
 unitTimePerFrame = 1/29.97
 cumulTime = 0
 startTime = dt.datetime(year_arg, month_arg, day_arg, hour_arg, minute_arg, second_arg, micsec_arg)
