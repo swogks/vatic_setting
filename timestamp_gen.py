@@ -1,4 +1,4 @@
-# timecode_cal.py
+# timestamp_gen.py
 
 import datetime as dt
 import sys
@@ -21,7 +21,9 @@ day_arg = int(date_arg[8:])
 hour_arg = int(time_arg[0:2])
 minute_arg = int(time_arg[3:5])
 second_arg = int(time_arg[6:8])
-micsec_arg = int(time_arg[9:])*10000
+micsec_arg = 1
+#micsec_arg = int(time_arg[9:])*10000
+
 
 # open text file
 fileName = 'timestamp_'+ header + '.txt'
