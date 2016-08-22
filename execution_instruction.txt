@@ -2,13 +2,17 @@
 
 mkdir ~/data
 mkdir ~/data/output
-turkic extract ~/data/SampleVideo_1280x720_1mb.mp4 ~/data/output
+turkic extract ~/data/SampleVideo.mp4 ~/data/output
 turkic formatframes /path/to/frames/ /path/to/output/directory
 
-turkic load identifier1 ~/data/output Label1 Label2 --offline
+turkic load identifier1 ~/data/output Label1 Label2 --length 2000 --offline
 turkic publish --offline
 
 turkic status
 turkic list
-turkic dump identifier1 -o output.txt
+
+turkic dump identifier1 -o output.txt --merge --merge-threshold 0.5 (-s 2.8)
+turkic visualize identifier /tmp(folder) --merge
+
 turkic delete identifier1
+
